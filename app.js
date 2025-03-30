@@ -56,6 +56,10 @@ app.post('/api/compile-latex', (req, res) => {
     }
 });
 
+app.get("/check", (req, res) => {
+    res.send("Ok");
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
